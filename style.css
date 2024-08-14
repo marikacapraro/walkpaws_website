@@ -12,7 +12,7 @@
 }
 
 * h2 {
-    font-size: 40px;
+    font-size: 46px;
     color: #010C80;
     font-weight: 600;
 }
@@ -228,4 +228,43 @@ nav ul li a:hover::after {
     font-size: 18px;
     color: #000;
     font-weight: 300;
+}
+
+/* Join us section*/
+.join-us-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.join-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-us-image {
+    flex: 1;
+    padding-right: 20px; /* Space between the image and the text */
+}
+
+.join-us-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* You can adjust the max-width as needed */
+}
+
+.join-us-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.join-us-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.join-us-text p {
+    margin-bottom: 20px;
 }
