@@ -1,0 +1,91 @@
+/* Customer reviews*/
+
+.customer-reviews {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.reviews-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Hide extra cards */
+    padding: 0px 150px;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 40px; /*space between cards review*/
+}
+
+.review-card {
+    min-width: 30.0%; /* Show 3 cards at a time */
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.review-card p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    margin-bottom: 20px;
+}
+
+.pawprint-icon {
+    width: 24px;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #010C80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #87C0CD;
+}
