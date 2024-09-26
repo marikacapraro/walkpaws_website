@@ -1,3 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex sans';
+}
+
+* h1 {
+    font-size: 64px;
+    color: #010C80;
+    font-family: 'IBM Plex' sans;
+    font-weight: 600;
+}
+
+* h2 {
+    font-size: 46px;
+    color: #010C80;
+    font-weight: 600;
+}
+
+* p {
+    font-size: 24px;
+    color: #000;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-column p {
+    font-weight: 400;
+}
+
+.right-column {
+    flex: 1;
+    text-align: right;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-primary {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 39px;
+    background-color: #010C80;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: background-color 0.3s, color 0.3s
+        /*, transform 0.3s*/
+    ;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.button-primary:hover {
+    background-color: #87C0CD;
+    color: #000;
+    /* transform: scale(1.1);*/
+}
+
+.button-secondary {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 39px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: background-color 0.3s, color 0.3s
+        /*, transform 0.3s*/
+    ;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+}
+
+.button-secondary:hover {
+    background-color: #87C0CD;
+    color: #000;
+    border: none;
+    /* transform: scale(1.1);*/
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-top: 0;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+    align-items: center;
+}
+
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;  /* Thickness of the underline */
+    background-color: #87C0CD;  /* Color of the underline */
+    transition: width 0.3s ease-out;   /* Transition effect for the underline */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* Expands the underline from left to right */
+}
+
+/* How it works section */
+
+.cards-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.cards-section h2 {
+    font-size: 40px;
+    color: #010C80;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Allows the cards to wrap on smaller screens */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    background-color: #010C80;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    margin-top: -55px;
+}
+
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+}
+
+/* Join us section*/
+.join-us-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.join-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-us-image {
+    flex: 1;
+    padding-right: 20px; /* Space between the image and the text */
+}
+
+.join-us-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* You can adjust the max-width as needed */
+}
+
+.join-us-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.join-us-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
 /* Customer reviews*/
 
 .customer-reviews {
@@ -89,3 +359,183 @@
 .carousel-button:hover {
     background-color: #87C0CD;
 }
+
+
+
+
+
+
+<section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <!-- Review 1-->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/unsplash__upgGOuAOYs.jpg" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2-->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/customer_2.jpg" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3-->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/customer_3.jpg" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 4-->
+                    <!-- <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/customer_4.jpg" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                     Review 5-->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/customer_5.png" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 6-->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="Images/customer_6.jpg" alt="">
+                            </div>
+                            <div class="stars.icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div class="name-profession">
+                                <span class="name">Ally Pearson</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
