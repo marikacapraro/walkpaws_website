@@ -518,3 +518,175 @@ footer {
 .footer-help a:hover {
     text-decoration: underline;
 }
+
+
+/* About Us Page Hero Section */
+.about-hero-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-hero-content h1 {
+    color: #010C80;
+    font-size: 46px;
+    font-weight: 600;
+    margin: 0 0;
+}
+
+.about-hero-content p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #000;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* What we offer section */
+.what-we-offer {
+    padding: 60px 20px;
+    background-color: #fff;
+    max-width: 1400px;  /* Add max-width to match other sections */
+    margin: 0 auto;     /* Center the section */
+}
+
+.what-we-offer h2 {
+    color: #010C80;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Common styles for both sections */
+.offer-item-right, 
+.offer-item-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;  /* Fixed maximum width */
+    height: 400px;      /* Fixed height for both */
+    margin: 0 auto 40px;
+}
+
+.offer-item-right {
+    background: linear-gradient(to right, #87C0CD 60%, #ffffff);
+}
+
+.offer-item-left {
+    background: linear-gradient(to left, #87C0CD 60%, #ffffff);
+}
+
+/* Content styling */
+.offer-content-left {
+    max-width: 500px;
+    text-align: left;
+    padding-right: 40px;
+}
+
+/* Paw prints image */
+.paw-prints {
+    flex-shrink: 0;
+    width: 600px;  /* Fixed width */
+    height: auto;
+}
+
+.paw-prints img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* Keep image proportions */
+    opacity: 0.8;
+    transform: scaleX(-1);  /* This will flip the image horizontally */
+}
+
+/* Support team image */
+.support-image {
+    flex-shrink: 0;
+    width: 400px;  /* Match the paw prints width */
+    height: auto;
+}
+
+.support-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Common text styles */
+.offer-item-right h3,
+.offer-item-left h3 {
+    color: #010C80;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.offer-item-right p,
+.offer-item-left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Download button container */
+.download-button-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .paw-prints {
+        width: 400px;
+        height: 266px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-item-right,
+    .offer-item-left {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .offer-content-left {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .paw-prints {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .support-image {
+        width: 200px;
+        margin: 20px 0;
+    }
+}
