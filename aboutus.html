@@ -103,5 +103,21 @@
             </div>
         </div>
     </footer>
-
+   
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, {
+            threshold: 0.1 // This means the animation will trigger when 10% of the element is visible
+        });
+        
+        // Observe all elements with class offer-item-right
+        document.querySelectorAll('.offer-item-right').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
     </body>
