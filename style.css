@@ -77,6 +77,8 @@
 }
 
 .button-secondary {
+    display: inline-block;
+    text-decoration: none;
     width: fit-content;
     height: fit-content;
     padding: 10px 39px;
