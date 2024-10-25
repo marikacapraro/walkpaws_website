@@ -270,6 +270,7 @@ nav ul li a:hover::after {
 
 
 /* Swiper section styles */
+
 .swiper-section {
     padding: 80px 0;
     background: #87C0CD;
@@ -298,8 +299,13 @@ nav ul li a:hover::after {
 }
 
 .card {
+    position: relative;
     background: #fff;
     border-radius: 20px;
+    min-height: 400px;
+    height: auto;
+    max-height: 450px;
+    margin: 20px 15px 0px 20px;
     width: 100%; /* Fill slide width */
     display: flex;
     flex-direction: column;
@@ -355,10 +361,10 @@ nav ul li a:hover::after {
     margin: 0;
 }
 
-.logo-bottom {
+.logo-bottom img {
     width: 40px;
     height: 40px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Navigation arrows */
