@@ -762,3 +762,103 @@ footer {
     margin: 20px auto;
     text-align: center;
 }
+
+/* Form Section Styles */
+.form-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-intro h2 {
+    color: #010C80;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-intro p {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #87C0CD;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Label animation when input is focused or has content */
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #010C80;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #010C80;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button styles - using your existing button-primary class with some modifications */
+.form-container .button-primary {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-intro p {
+        font-size: 16px;
+    }
+}
