@@ -339,7 +339,7 @@ nav ul li a:hover::after {
 }
 
 .name-profession {
-    margin: 15px 0;
+    margin: 5px 0;
     text-align: center;
 }
 
@@ -347,6 +347,11 @@ nav ul li a:hover::after {
     font-size: 20px;
     font-weight: 600;
     color: #000;
+}
+
+.rating{
+    color: orange;
+    padding-bottom: 15px;
 }
 
 .review-text {
