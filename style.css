@@ -106,7 +106,6 @@
 header {
     background-color: #fff;
     padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding-top: 0;
 }
@@ -548,7 +547,7 @@ footer {
     height: auto;
 }
 
-.about-hero-content h1 {
+.about-hero-content h2 {
     color: #010C80;
     font-size: 46px;
     font-weight: 600;
@@ -574,7 +573,7 @@ footer {
 
 .what-we-offer h2 {
     color: #010C80;
-    font-size: 40px;
+    font-size: 46px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -734,20 +733,23 @@ footer {
 /* Join us page*/
 
 .join-hero-section {
-    padding: 100px 20px;
+    padding: 150px 20px;
     background-color: #fff;
-    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .join-hero-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;  /* Keep content above image */
 }
 
-.join-hero-content h1 {
+.join-hero-content h2 {
     color: #010C80;
     font-size: 46px;
     font-weight: 600;
@@ -761,6 +763,40 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
+}
+
+.join-hero-image {
+    position: absolute;
+    right: -20px;  /* Adjust this value to position the image */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;  /* Adjust size as needed */
+    z-index: 1;
+    opacity: 0.3;  /* Make image semi-transparent */
+}
+
+.join-hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .join-hero-image {
+        width: 500px;
+        right: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .join-hero-image {
+        display: none;  /* Hide image on mobile */
+    }
+    
+    .join-hero-content {
+        padding: 0 20px;
+    }
 }
 
 /* Form Section Styles */
@@ -777,7 +813,7 @@ footer {
 
 .form-intro h2 {
     color: #010C80;
-    font-size: 40px;
+    font-size: 46px;
     margin-bottom: 20px;
 }
 
@@ -785,7 +821,7 @@ footer {
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .form-container {
