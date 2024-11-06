@@ -1,0 +1,99 @@
+.owl-carouse {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    padding: 0 60px; /* Space for navigation arrows */
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: stretch; /* Ensure all slides are same height */
+}
+
+.carousel-slide {
+    height: auto; /* Allow natural height */
+    display: flex;
+    width: calc((100% - 60px) / 3) !important; /* Exact third width accounting for gaps */
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    min-height: 400px;
+    height: auto;
+    max-height: 450px;
+    margin: 20px 15px 0px 20px;
+    width: 100%; /* Fill slide width */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove any margins */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-profession {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.rating{
+    color: orange;
+    padding-bottom: 15px;
+}
+
+.review-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.review-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.logo-bottom{
+    /* Container styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-bottom img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+}
