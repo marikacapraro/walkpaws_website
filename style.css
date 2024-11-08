@@ -271,7 +271,9 @@ nav ul li a:hover::after {
 
 
 /* Swiper section styles */
-
+.carousel-section{
+    display: flex;
+}
 .owl-carousel {
     position: relative;
     background: #87C0CD;
@@ -280,6 +282,7 @@ nav ul li a:hover::after {
     padding-bottom: 80px;
     padding-left: 80px;
     padding-right: 80px;
+    display: flex;
 }
 
 .carousel-slide {
