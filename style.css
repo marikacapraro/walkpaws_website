@@ -269,6 +269,31 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
+/* Review Section Text */ 
+.review-section{
+    padding: 80px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    background: #cfe7ed;
+}
+
+.review-paragraph h2{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-paragraph p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.review-container{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Swiper section styles */
 .carousel-section{
@@ -276,10 +301,11 @@ nav ul li a:hover::after {
 }
 .owl-carousel {
     position: relative;
-    background: #87C0CD;
+    background: #cfe7ed;
     overflow: hidden;
     display: flex;
     padding: 80px 150px;
+    padding-top: 20px;
 }
 
 .carousel-slide {
@@ -378,7 +404,9 @@ nav ul li a:hover::after {
     color: #fff; /* Customize text color */
     border-radius: 100%; /* Optional: Add rounded corners */
     cursor: pointer; /* Change cursor on hover */
-    background-color: #010C80;
+    border: #87C0CD solid 3px;
+    padding: 10px 18px 10px 15px;
+    background-color: #87C0CD;
 }
 
 .owl-nav .nav-button {
