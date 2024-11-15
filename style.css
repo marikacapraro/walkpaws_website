@@ -32,7 +32,7 @@
     padding: 80px;
     background-color: #fff;
     padding-top: 20px;
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 0.7s ease-in;
     /* Optional: if you want elements to start completely transparent */
     opacity: 1;
 }
@@ -280,7 +280,7 @@ nav ul li a:hover::after {
     opacity: 0; /* Start hidden */
     visibility: hidden; /* Hide by default */
     transform: translateY(20px); /* Start slightly below final position */
-    transition: opacity 2.5s ease, transform 2.5s ease, visibility 2.5s ease;
+    transition: opacity 2.5s ease, transform 0.7s ease, visibility 2.5s ease;
 }
 
 .join-us-section.fade-in {
