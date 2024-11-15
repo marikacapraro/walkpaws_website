@@ -281,6 +281,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- Add Swiper JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -299,5 +300,64 @@
             console.log("Owl Carousel initialized."); // Check if Owl Carousel initializes
         });
     </script>
+
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.querySelectorAll('.card-explanation');
+                    cards.forEach((card, index) => {
+                        // Make card visible
+                        card.style.visibility = 'visible';
+                        // Add animation with delay
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 200); // 200ms delay between each card
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cardsSection = document.querySelector('.cards-container');
+            if (cardsSection) {
+                observer.observe(cardsSection);
+            }
+        });
+    </script>
+
+    <script>
+        const joinUsObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const joinUsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    joinUsObserver.unobserve(entry.target);
+                }
+            });
+        }, joinUsObserverOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const joinUsSection = document.querySelector('.join-us-section');
+            if (joinUsSection) {
+                joinUsObserver.observe(joinUsSection);
+            }
+        });
+    </script>
+
+
     </body>
 </html>
