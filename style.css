@@ -181,6 +181,115 @@ nav ul li a:hover::after {
     /* Expands the underline from left to right */
 }
 
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Header adjustments */
+    .logo-container img {
+        width: 120px; /* Slightly smaller logo */
+    }
+
+    nav ul {
+        gap: 15px; /* Reduce gap between nav items */
+    }
+
+    nav ul li {
+        padding-right: 20px; /* Reduce padding */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font */
+    }
+
+    /* Hero section adjustments */
+    .hero-section {
+        padding: 40px; /* Reduce padding */
+        flex-direction: column; /* Stack columns on tablet */
+        text-align: center;
+    }
+
+    .left-column {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 48px; /* Smaller heading */
+    }
+
+    p {
+        font-size: 20px; /* Smaller paragraph text */
+        padding-bottom: 20px;
+    }
+
+    .right-column {
+        text-align: center;
+    }
+
+    .right-column img {
+        width: 80%; /* Slightly smaller image */
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .button-primary,
+    .button-secondary {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
+
+    .logo-container img {
+        width: 80px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        margin-left: auto; /* Pushes menu to right */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}
+
 /* How it works section */
 
 .cards-section {
@@ -273,6 +382,102 @@ nav ul li a:hover::after {
     font-weight: 300;
 }
 
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .cards-section {
+        padding: 60px 20px; /* Slightly reduce padding */
+    }
+
+    .cards-section h2 {
+        font-size: 36px; /* Slightly smaller heading */
+        margin-bottom: 50px;
+    }
+
+    .cards-container {
+        gap: 30px; /* Adjust gap between cards */
+        padding: 0 20px; /* Add some padding to container */
+        align-items: center;
+    }
+
+    .card-explanation {
+        max-width: 280px; /* Slightly wider cards on tablet */
+        margin-bottom: 20px;
+    }
+
+    .card-explanation h3 {
+        font-size: 22px; /* Adjust heading size */
+    }
+
+    .card-explanation p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .cards-section {
+        padding: 40px 15px;
+    }
+
+    .cards-section h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        gap: 40px; /* Increase gap between stacked cards */
+    }
+
+    .card-explanation {
+        max-width: 100%; /* Full width on mobile */
+        width: calc(100% - 40px); /* Account for padding */
+        margin: 10px 20px;
+        padding: 25px 20px;
+        align-items: center;
+    }
+
+    /* Adjust icon positioning for mobile */
+    .icon {
+        width: 45px;
+        height: 45px;
+        margin-top: -45px; /* Adjust based on new icon size */
+    }
+
+    .icon img {
+        width: 45px;
+        height: auto;
+    }
+
+    .card-explanation h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .card-explanation p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .cards-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .card-explanation {
+        padding: 20px 15px;
+        margin: 10px 0;
+    }
+
+    .cards-container {
+        gap: 35px; /* Slightly reduce gap for very small screens */
+    }
+}
+
 /* Join us section*/
 .join-us-section {
     padding: 80px 20px;
@@ -318,6 +523,106 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .join-us-section {
+        padding: 60px 40px; /* Adjust padding for tablets */
+    }
+
+    .join-us-container {
+        max-width: 900px; /* Slightly reduce max-width */
+        gap: 30px; /* Add gap between image and text */
+    }
+
+    .join-us-image {
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .join-us-image img {
+        max-width: 350px; /* Slightly smaller image */
+    }
+
+    .join-us-text h2 {
+        font-size: 36px; /* Smaller heading */
+        margin-bottom: 15px;
+    }
+
+    .join-us-text p {
+        font-size: 18px; /* Adjust paragraph text size */
+        margin-bottom: 25px;
+    }
+
+    .join-us-text .button-primary {
+        padding: 12px 30px; /* Slightly smaller button */
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .join-us-section {
+        padding: 40px 20px;
+    }
+
+    .join-us-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .join-us-image {
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .join-us-image img {
+        max-width: 280px; /* Even smaller image for mobile */
+        margin: 0 auto; /* Center image */
+    }
+
+    .join-us-text {
+        order: 1; /* Pull text to top */
+        padding: 0; /* Remove padding */
+    }
+
+    .join-us-text h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .join-us-text p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding: 0 10px; /* Add some padding to text */
+    }
+
+    .join-us-text .button-primary {
+        width: 100%; /* Full-width button */
+        max-width: 280px; /* Maximum button width */
+        margin: 0 auto; /* Center button */
+        padding: 14px 20px; /* Larger touch target */
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .join-us-section {
+        padding: 30px 15px;
+    }
+
+    .join-us-image img {
+        max-width: 240px; /* Smaller image for very small screens */
+    }
+
+    .join-us-text h2 {
+        font-size: 28px;
+    }
+
+    .join-us-text p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}
+
 /* Review Section Text */ 
 .review-section{
     padding: 80px 20px 20px 40px;
@@ -353,7 +658,7 @@ nav ul li a:hover::after {
     background: #cfe7ed;
     overflow: hidden;
     display: flex;
-    padding: 80px 150px;
+    padding: 40px 150px;
     padding-top: 20px;
 }
 
@@ -365,13 +670,9 @@ nav ul li a:hover::after {
     position: relative;
     background: #fff;
     border-radius: 20px;
-    min-height: 400px;
-    max-height: 450px;
-    margin: 20px 10px; /* Consistent left and right margin */
-    /* width: 100%; /* Fill slide width */
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+    min-height: 450px; /* Increased minimum height to accommodate content */
+    margin: 20px 10px;
+    padding: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -380,15 +681,15 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 100%;
+    position: relative; /* Added for better positioning control */
 }
 
 .image {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .image img {
@@ -416,7 +717,7 @@ nav ul li a:hover::after {
 .review-text {
     flex-grow: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     padding: 0 10px;
 }
@@ -431,7 +732,8 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: auto;
+    padding-top: 15px; /* Space above logo */
 }
 
 .logo-bottom img {
@@ -479,6 +781,155 @@ nav ul li a:hover::after {
     font-weight: 600;
     text-align: center;
     padding: 10px 15px 10px 18px; /* Add padding for the buttons */
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Review section text */
+    .review-section {
+        padding: 60px 40px 20px 40px;
+    }
+
+    .review-paragraph h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .review-paragraph p {
+        font-size: 18px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Carousel section */
+    .owl-carousel {
+        padding: 60px 100px;
+        padding-top: 20px;
+    }
+
+    .card {
+        min-height: 480px;
+        padding: 25px;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Adjust navigation buttons */
+    .owl-nav .prev {
+        left: 40px;
+    }
+
+    .owl-nav .next {
+        right: 40px;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* Review section text */
+    .review-section {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .review-paragraph h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .review-paragraph p {
+        font-size: 16px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Carousel section */
+    .owl-carousel {
+        padding: 40px 20px;
+        padding-top: 20px;
+    }
+
+    .card {
+        min-height: 400px;
+        padding: 20px 15px;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .review-text p {
+        font-size: 14px;
+    }
+
+    .rating {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .logo-bottom img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Adjust navigation buttons for mobile */
+    .owl-nav .prev,
+    .owl-nav .next {
+        display: none; /* Hide arrows on mobile for better UI */
+    }
+
+    /* Add touch swipe indication (optional) */
+    .carousel-section::after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .review-section {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .review-paragraph h2 {
+        font-size: 28px;
+    }
+
+    .review-paragraph p {
+        font-size: 15px;
+    }
+
+    .card {
+        min-height: 380px;
+        padding: 15px;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .review-text p {
+        font-size: 13px;
+    }
 }
 
 
@@ -557,6 +1008,74 @@ footer {
 
 .footer-help a:hover {
     text-decoration: underline;
+}
+
+/* Footer responsive styles */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .footer-logo,
+    .footer-payment,
+    .footer-help,
+    .footer-social {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 70px;
+        margin-bottom: 8px;
+    }
+
+    .footer-payment-icons,
+    .footer-social-icons {
+        gap: 20px;
+    }
+
+    .footer-payment h3,
+    .footer-help h3,
+    .footer-social h3 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .footer-help a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
+
+    .footer-logo p {
+        font-size: 10px;
+    }
 }
 
 

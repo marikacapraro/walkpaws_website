@@ -22,6 +22,9 @@
                         <img src="Images/walkpaws-high-resolution-color-logo.png" alt="WalkPaws Logo">
                     </a>
                 </div>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About us</a></li>
@@ -246,7 +249,7 @@
             </div>
         </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <!-- Logo Section -->
@@ -289,13 +292,27 @@
         $(document).ready(function(){
             console.log("jQuery is loaded and document is ready."); // Check if jQuery is working
             $(".owl-carousel").owlCarousel({
-                items: 3,
                 loop: true,
+                margin: 20,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 nav: true,
-                navText: ["<div class='nav-button prev'><</div>", "<div class='nav-button next'>></div>"]
+                navText: ["<div class='nav-button prev'><</div>", "<div class='nav-button next'>></div>"],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    },
+                    1024: {
+                        items: 3,
+                        nav: true
+                    }
+                }
             });
             console.log("Owl Carousel initialized."); // Check if Owl Carousel initializes
         });
@@ -355,6 +372,44 @@
             if (joinUsSection) {
                 joinUsObserver.observe(joinUsSection);
             }
+        });
+    </script>
+    
+    <!-- Hamburger menu for phone screen size -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                navText: [
+                    "<i class='fas fa-chevron-left nav-button prev'></i>",
+                    "<i class='fas fa-chevron-right nav-button next'></i>"
+                ],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false // Hide navigation on mobile
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1024: {
+                        items: 3,
+                        nav: true
+                    }
+                },
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true
+            });
         });
     </script>
 
