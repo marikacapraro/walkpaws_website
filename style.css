@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1129,6 +1134,63 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-hero-section {
+        padding: 60px 20px;
+    }
+
+    .about-hero-content {
+        max-width: 800px;
+    }
+
+    .hero-image {
+        width: 180px;
+    }
+
+    .about-hero-content h2 {
+        font-size: 40px;
+    }
+
+    .about-hero-content p {
+        font-size: 20px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-image {
+        width: 150px;
+    }
+
+    .about-hero-content h2 {
+        font-size: 32px;
+    }
+
+    .about-hero-content p {
+        font-size: 16px;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero-section {
+        padding: 30px 15px;
+    }
+
+    .hero-image {
+        width: 120px;
+    }
+
+    .about-hero-content h2 {
+        font-size: 28px;
+    }
+}
+
 /* What we offer section */
 .what-we-offer {
     padding: 60px 20px;
@@ -1277,40 +1339,133 @@ footer {
     }
 }
 
-/* Responsive design */
-@media (max-width: 1024px) {
-    .paw-prints {
-        width: 400px;
-        height: 266px;
-    }
-}
 
-@media (max-width: 768px) {
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+    .what-we-offer {
+        padding: 40px 20px;
+    }
+ 
+    .what-we-offer h2 {
+        font-size: 36px;
+    }
+ 
+    .what-we-offer p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+ 
     .offer-item-right,
     .offer-item-left {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
+        padding: 30px;
+        height: auto;
     }
+ 
+    .offer-content-left h3 {
+        font-size: 28px;
+    }
+ 
+    .paw-prints,
+    .support-image {
+        width: 400px;
+    }
+ }
+ 
+ /* Mobile styles */
 
-    .offer-content-left {
+    @media screen and (max-width: 768px) {
+    .what-we-offer {
+            padding: 30px 15px;
+        }
+    .what-we-offer p {
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .what-we-offer h2 {
+        font-size: 32px;
+    }
+ 
+    .what-we-offer p {
+        font-size: 16px;
         max-width: 100%;
-        text-align: center;
-        padding: 0;
-        margin-bottom: 20px;
+    }
+ 
+    .offer-item-right,
+    .offer-item-left {
+        display: flex;
+       flex-direction: column;
+       padding: 20px 15px;
+    }
+ 
+    .offer-content-left {
+        width: 100%;
+       order: 1;
+       padding: 15px;
+       margin-bottom: 20px;
+       text-align: left;
+    }
+ 
+    .paw-prints,
+    .support-image {
+       width: 100%;
+       order: 2;
     }
 
     .paw-prints {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
+        margin-top: -70px;
     }
 
     .support-image {
-        width: 200px;
-        margin: 20px 0;
+        width: 80%;
+        margin-top: -50px;
     }
-}
+ 
+    .paw-prints img,
+    .support-image img {
+        width: 100%;
+       height: auto;
+       object-fit: contain;
+    }
+ 
+    .offer-content-left p {
+        padding: 0 15px;
+        margin: 15px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+ 
+    .offer-content-left h3 {
+        color: #010C80;
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+ 
+    .download-button-container {
+        margin: 30px 0;
+    }
+ 
+    .download-button-container .button-primary {
+        width: 80%;
+        max-width: 280px;
+    }
+ }
+ 
+ /* Small mobile styles */
+ @media screen and (max-width: 480px) {
+    .what-we-offer h2 {
+        font-size: 28px;
+    }
+ 
+    .what-we-offer p {
+        font-size: 14px;
+    }
+ 
+    .offer-content-left h3 {
+        font-size: 22px;
+    }
+ }
 
 /* Join us page*/
 

@@ -20,6 +20,9 @@
                     <img src="Images/walkpaws-high-resolution-color-logo.png" alt="WalkPaws Logo">
                 </a>
             </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
@@ -109,6 +112,13 @@
                 </div>
             </div>
         </footer>
+
+    <!-- Hamburger menu for phone screen size -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
 
 
     </body>

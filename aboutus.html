@@ -19,6 +19,9 @@
                     <img src="Images/walkpaws-high-resolution-color-logo.png" alt="WalkPaws Logo">
                 </a>
             </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
@@ -46,7 +49,6 @@
             <p>Our innovative features and dedicated team ensure your furry family member receives the highest quality care, attention, and exercise they deserve. From real-time tracking to professional walkers and round-the-clock support, we've thought of everything to make pet care seamless and worry-free.</p>
         </div>
         
-        <!-- GPS Tracking subsection -->
         <!-- GPS Tracking subsection -->
         <div class="offer-item-right gps-routes">
             <div class="offer-content-left">  <!-- Changed from offer-content-right to offer-content-left -->
@@ -126,4 +128,12 @@
             observer.observe(element);
         });
     </script>
+
+        <!-- Hamburger menu for phone screen size -->
+        <script>
+            document.querySelector('.hamburger-menu').addEventListener('click', function() {
+                document.querySelector('nav ul').classList.toggle('show');
+            });
+        </script>
+
     </body>
