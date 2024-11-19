@@ -1725,6 +1725,11 @@ section.form-section {
     .form-intro {
         padding: 30px 60px;
     }
+    
+    .join-hero-image {
+        margin-right: 50px;
+        opacity: 20%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1744,5 +1749,10 @@ section.form-section {
     .form-intro {
         margin: 20px 0;
         padding: 0 15px;
+    }
+
+    .join-hero-image {
+        opacity: 100%;
+        align-items: center;
     }
 }
