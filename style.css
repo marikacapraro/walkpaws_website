@@ -265,7 +265,7 @@ nav ul li a:hover::after {
     }
 
     .logo-container img {
-        width: 80px;
+        width: 100px;
     }
 
     .hamburger-menu {
@@ -1742,4 +1742,3 @@ section.form-section {
         font-size: 32px;
     }
 }
-
