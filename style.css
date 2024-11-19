@@ -1,6 +1,6 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+
 }
 
 * {
@@ -1343,7 +1343,7 @@ footer {
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
     .what-we-offer {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
  
     .what-we-offer h2 {
@@ -1357,12 +1357,21 @@ footer {
  
     .offer-item-right,
     .offer-item-left {
-        padding: 30px;
+        padding: 40px 0;
         height: auto;
+        background: #87C0CD;
+    }
+
+    .offer-content-left {
+        padding-left: 60px;
     }
  
     .offer-content-left h3 {
         font-size: 28px;
+    }
+
+    .offer-content-left p {
+        margin-left: 0;
     }
  
     .paw-prints,
@@ -1375,8 +1384,9 @@ footer {
 
     @media screen and (max-width: 768px) {
     .what-we-offer {
-            padding: 30px 15px;
-        }
+        padding: 30px 0;
+        width: 100%;
+    }
     .what-we-offer p {
         padding: 0 15px;
         width: 100%;
@@ -1394,17 +1404,18 @@ footer {
     .offer-item-right,
     .offer-item-left {
         display: flex;
-       flex-direction: column;
-       padding: 20px 15px;
+        flex-direction: column;
+        padding: 30px 0;
+        background: #87C0CD;
     }
  
     .offer-content-left {
         width: 100%;
-       order: 1;
-       padding: 15px;
-       margin-bottom: 20px;
-       text-align: left;
-    }
+        order: 1;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: left;
+    } 
  
     .paw-prints,
     .support-image {
@@ -1413,7 +1424,7 @@ footer {
     }
 
     .paw-prints {
-        margin-top: -70px;
+        margin-top: -100px;
     }
 
     .support-image {
@@ -1424,8 +1435,8 @@ footer {
     .paw-prints img,
     .support-image img {
         width: 100%;
-       height: auto;
-       object-fit: contain;
+        height: auto;
+        object-fit: contain;
     }
  
     .offer-content-left p {
@@ -1433,6 +1444,7 @@ footer {
         margin: 15px 0;
         width: 100%;
         box-sizing: border-box;
+        text-align: center;
     }
  
     .offer-content-left h3 {
@@ -1464,6 +1476,11 @@ footer {
  
     .offer-content-left h3 {
         font-size: 22px;
+    }
+
+    .offer-item-left,
+    .offer-item-right {
+        background: #87C0CD;
     }
  }
 
